@@ -132,123 +132,125 @@ table {
 }
 html,
 body {
+  width: 1560px;
   height: 100%;
+  background-color: white;
 }
-nav {
+.heading {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-}
-nav li {
-  font-size: 1rem;
+  flex-direction: row;
+  font-size: 5rem;
   font-weight: bold;
   margin: 1rem;
 }
-h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 1rem;
+.heading nav {
+  width: 45%;
 }
-.info {
-  width: 50%;
-  text-align: justify;
+.heading ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: fixed;
+  margin: 1rem 1rem 2rem 1rem;
+  width: 100%;
 }
-.info h2 {
+.heading ul a {
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+  width: 2rem;
   margin: 1rem;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
-.info h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 1rem;
+.info {
+  width: 100%;
+  display: flex;
+  text-align: justify;
 }
 .info div {
   margin: 1rem;
-  width: 80%;
+  width: 45%;
 }
 .info .about {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .info .goals {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   text-align: justify;
-}
-.experience h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 1rem;
-}
-.experience h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 1rem;
 }
 .experience div {
   margin: 1rem;
-  width: 80%;
+  width: 45%;
+  text-align: space-evenly;
 }
 .experience .MMS {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience .APD {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience .TDOC {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience .WNC {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience .AHS {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience .NHC {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience .URMC {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .experience .CNA {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1rem;
 }
 .education {
-  width: 50%;
+  width: 100%;
+  display: flex;
   text-align: justify;
 }
-.education h2 {
+.education div {
+  margin: 1rem;
+  width: 45%;
+}
+.education .LS {
+  border: 1px solid black;
+  margin: 1rem;
+}
+.education .TTC {
+  border: 1px solid black;
+  margin: 1rem;
+}
+h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1rem;
 }
-.education h3 {
+h3 {
   font-size: 1rem;
   font-weight: bold;
   margin: 1rem;
-}
-.education div {
-  margin: 1rem;
-  width: 80%;
-}
-.education .LS {
-  border: 1px solid black;
-  margin: 10px;
-}
-.education .TTC {
-  border: 1px solid black;
-  margin: 10px;
 }
 .contacts h2 {
   width: 50%;
