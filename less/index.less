@@ -61,7 +61,29 @@ html, body {
 
 // My CSS
 
+// .bg {
+//   position: fixed; 
+//   top: -50%; 
+//   left: -50%; 
+//   width: 200%; 
+//   height: 200%;
+// }
+
+// .bg img {
+//   position: absolute; 
+//   top: 0; 
+//   left: 0; 
+//   right: 0; 
+//   bottom: 0; 
+//   margin: auto; 
+//   min-width: 50%;
+//   min-height: 50%;
+// }
+
+
+
 @baseColor: black;
+@altColor: white;
 
 .heading {
 	width: 100%;
@@ -69,11 +91,10 @@ html, body {
 	flex-direction: row;
 	font-weight: bold;
 	margin: 1rem;
-
+	
 	nav {
 		width: 50%;
 	}
-
 
 	ul{
 		display: flex;
@@ -82,42 +103,52 @@ html, body {
 		position: fixed;
 		margin: 1rem;
 		width: 100%;
-		
-		
-
+	
 		a {
 			font-size: 1.5rem;
 			font-weight: bold;
 			text-decoration: none;
 			width: 2rem;
 			margin: 2rem;
-			background-color: white;
-			color: @baseColor;
-			border: 1px solid @baseColor;
+			background-color: @baseColor;
+			color: @altColor;
+			border: .3rem solid @altColor;
 			border-radius: 2rem;
 			margin: 1rem;
 			padding: 1rem;
-		}
-	}	
+
+			
+			
+		} // close a
+	}	// close ul
+}	// close .heading
+
+li a:hover {
+	background-color: @altColor;
+	color: @baseColor;
+	border: .3rem solid @baseColor;
 }
 
 .info {
 	width: 100%;
+	margin: 0 auto;
 	display: flex;
 	text-align: justify;
+	color: @altColor;
 	
 	div {
 		margin: 1rem;
 		width: 45%;
+		color: @baseColor;
 	}
 
 	.about {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.goals {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 }
@@ -135,42 +166,42 @@ html, body {
 	}
 
 	.MMS {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.APD {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.TDOC {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.WNC {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.AHS {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.NHC {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.URMC {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.CNA {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 } // .experience
@@ -179,19 +210,21 @@ html, body {
 	width: 100%;
 	display: flex;
 	text-align: justify;
-
+	
 	div {
+		display: flex;
+		flex-direction: column;
 		margin: 1rem;
 		width: 45%;
 	}
 
 	.LS {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
 	.TTC {
-		border: 1px solid black;
+		border: 1px solid @baseColor;
 		margin: 1rem;
 	}
 
@@ -200,7 +233,8 @@ html, body {
 h1 {
 	font-size: 5rem;
 	margin: 4rem 1rem 2rem 1rem;
-}
+	}
+
 h2 {
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -214,12 +248,17 @@ h3 {
 	}
 
 .contacts {
-	margin: 1rem;
-
+	
 	h2 {
 	width: 50%;
 	text-align: justify;
 	font-size: 1.5rem;
 	font-weight: bold;
-	margin: 1rem;	
+	}
+
+	li {
+		margin: 1rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
 }
