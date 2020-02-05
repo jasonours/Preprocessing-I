@@ -140,19 +140,18 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  font-size: 5rem;
   font-weight: bold;
   margin: 1rem;
 }
 .heading nav {
-  width: 45%;
+  width: 50%;
 }
 .heading ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   position: fixed;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem;
   width: 100%;
 }
 .heading ul a {
@@ -160,10 +159,13 @@ body {
   font-weight: bold;
   text-decoration: none;
   width: 2rem;
-  margin: 1rem;
+  margin: 2rem;
   background-color: white;
   color: black;
   border: 1px solid black;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 .info {
   width: 100%;
@@ -242,6 +244,10 @@ body {
   border: 1px solid black;
   margin: 1rem;
 }
+h1 {
+  font-size: 5rem;
+  margin: 4rem 1rem 2rem 1rem;
+}
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -257,5 +263,8 @@ h3 {
   text-align: justify;
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 1rem;
+}
+.contacts h2 li {
   margin: 1rem;
 }
