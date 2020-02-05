@@ -47,15 +47,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+html {
+	font-family: 'Special Elite', cursive;
+}
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
 
 html, body {
-	width: 1560px;	
-	height: 100%;
+	width: 1560px;
+	height: 100vh;
 	background-color:white;
 }
 
@@ -84,6 +86,10 @@ html, body {
 
 @baseColor: black;
 @altColor: white;
+
+.bordered {
+	border: 1px solid @baseColor;
+}
 
 .heading {
 	width: 100%;
@@ -143,12 +149,12 @@ li a:hover {
 	}
 
 	.about {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.goals {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 }
@@ -156,6 +162,7 @@ li a:hover {
 .experience {
 	width: 100%;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	text-align: justify;
 	
@@ -166,42 +173,42 @@ li a:hover {
 	}
 
 	.MMS {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.APD {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.TDOC {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.WNC {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.AHS {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.NHC {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.URMC {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.CNA {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 } // .experience
@@ -219,12 +226,12 @@ li a:hover {
 	}
 
 	.LS {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
 	.TTC {
-		border: 1px solid @baseColor;
+		.bordered();
 		margin: 1rem;
 	}
 
@@ -232,7 +239,8 @@ li a:hover {
 
 h1 {
 	font-size: 5rem;
-	margin: 4rem 1rem 2rem 1rem;
+	margin: 5rem 1rem 2rem 1rem;
+	text-align: center;
 	}
 
 h2 {
