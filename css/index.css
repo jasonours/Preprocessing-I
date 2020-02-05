@@ -138,6 +138,20 @@ body {
   width: 1560px;
   height: 100vh;
 }
+@media (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
 .bordered {
   border: 1px solid black;
 }
@@ -151,6 +165,15 @@ body {
 .heading nav {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .heading nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0.1rem;
+  }
+}
 .heading ul {
   display: flex;
   flex-direction: row;
@@ -158,6 +181,16 @@ body {
   position: fixed;
   margin: 1rem;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .heading ul {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0.1rem;
+  }
 }
 .heading ul a {
   font-size: 1.5rem;
@@ -171,6 +204,14 @@ body {
   border-radius: 2rem;
   margin: 1rem;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  .heading ul a {
+    display: flex;
+    justify-content: center;
+    margin: 0.1rem;
+    width: 100%;
+  }
 }
 li a:hover {
   background-color: white;
@@ -213,33 +254,73 @@ li a:hover {
   border: 1px solid black;
   margin: 1rem;
 }
+@media (max-width: 500px) {
+  .experience .MMS {
+    margin: 0.5rem;
+  }
+}
 .experience .APD {
   border: 1px solid black;
   margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .APD {
+    margin: 0.5rem;
+  }
 }
 .experience .TDOC {
   border: 1px solid black;
   margin: 1rem;
 }
+@media (max-width: 500px) {
+  .experience .TDOC {
+    margin: 0.5rem;
+  }
+}
 .experience .WNC {
   border: 1px solid black;
   margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .WNC {
+    margin: 0.5rem;
+  }
 }
 .experience .AHS {
   border: 1px solid black;
   margin: 1rem;
 }
+@media (max-width: 500px) {
+  .experience .AHS {
+    margin: 0.5rem;
+  }
+}
 .experience .NHC {
   border: 1px solid black;
   margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .NHC {
+    margin: 0.5rem;
+  }
 }
 .experience .URMC {
   border: 1px solid black;
   margin: 1rem;
 }
+@media (max-width: 500px) {
+  .experience .URMC {
+    margin: 0.5rem;
+  }
+}
 .experience .CNA {
   border: 1px solid black;
   margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .CNA {
+    margin: 0.5rem;
+  }
 }
 .education {
   width: 100%;

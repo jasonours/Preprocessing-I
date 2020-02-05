@@ -58,6 +58,17 @@ html {
 html, body {
 	width: 1560px;
 	height: 100vh;
+
+	@media (max-width: 800px){
+		width:100%;
+		padding: 2rem;
+	}
+
+	@media (max-width: 500px) {
+		width: 100%;
+		padding: 0.5rem;
+	} 
+
 }
 
 // My CSS
@@ -99,7 +110,18 @@ html, body {
 	
 	nav {
 		width: 50%;
+
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			margin: 0.1rem;
+		}
+
 	}
+
+	
 
 	ul{
 		display: flex;
@@ -108,7 +130,16 @@ html, body {
 		position: fixed;
 		margin: 1rem;
 		width: 100%;
-	
+
+		@media (max-width: 500px) {
+			position: static;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			margin: 0.1rem;
+		}
+
 		a {
 			font-size: 1.5rem;
 			font-weight: bold;
@@ -121,7 +152,14 @@ html, body {
 			border-radius: 2rem;
 			margin: 1rem;
 			padding: 1rem;
-
+		
+			@media (max-width: 500px) {
+				display: flex;
+				justify-content: center;
+				margin: 0.1rem;
+				width: 100%;
+			}
+		
 			
 			
 		} // close a
@@ -174,43 +212,76 @@ li a:hover {
 	.MMS {
 		.bordered();
 		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+
 	}
 
 	.APD {
 		.bordered();
 		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
 	}
 
 	.TDOC {
 		.bordered();
 		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
 	}
 
 	.WNC {
 		.bordered();
 		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
 	}
 
 	.AHS {
 		.bordered();
 		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
 	}
 
 	.NHC {
 		.bordered();
 		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
 	}
 
 	.URMC {
 		.bordered();
 		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
 	}
 
 	.CNA {
 		.bordered();
 		margin: 1rem;
-	}
-} // .experience
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		} //close @media
+	} //close .CNA
+} // close .experience
 
 .education {
 	width: 100%;
