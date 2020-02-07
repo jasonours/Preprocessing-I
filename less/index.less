@@ -178,6 +178,11 @@ li a:hover {
 	display: flex;
 	text-align: justify;
 	color: @altColor;
+
+	@media (max-width:500px) {
+			width: 200%;
+			flex-direction: column;
+	}
 	
 	div {
 		margin: 1rem;
@@ -202,11 +207,17 @@ li a:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 	text-align: justify;
+
+	@media (max-width:500px) {
+			width: 200%;
+			flex-direction: column;
+	}
 	
 	div {
 		margin: 1rem;
 		width: 45%;
 		text-align: space-evenly;
+
 	}
 
 	.MMS {
@@ -287,6 +298,11 @@ li a:hover {
 	width: 100%;
 	display: flex;
 	text-align: justify;
+	
+	@media (max-width:500px) {
+			width: 200%;
+			flex-direction: column;
+	}
 	
 	div {
 		display: flex;
